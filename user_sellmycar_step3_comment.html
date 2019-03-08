@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>imdealer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top bg-light">
+        <div class="container-fluid"><a class="navbar-brand text-dark" href="./"><i class="fa fa-home"></i></a><button class="navbar-toggler border rounded border-dark" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse text-align-right" id="navcol-1">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active text-dark" href="./">FAQ</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active text-dark" href="./">SHOWROOM</a></li>
+                </ul><span class="d-flex navbar-text font-weight-bold text-dark"><a href="./">SIGN IN</a></span></div>
+        </div>
+    </nav>
+    <header class="pt-4 pb-5 user-faq-bg-img">
+        <div class="container-fluid m-4"><img src="assets/img/logo_text_only_all-white.svg" width="120px"></div>
+        <div class="text-center text-light display-2">
+            <h1 class="display-4">Sell your car here!</h1>
+        </div>
+    </header>
+    <section>
+        <div class="p-md-4 p-2">
+            <h3 class="my-4 text-left">General</h3>
+            <div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">66%</div>
+                </div>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a href="#tab-photo" class="nav-link" data-toggle="tab" role="tab">
+                            <div class="image-holder">
+                                <div class="text-center">
+                                    <div class="user-sellmycar-photo-img mx-auto"></div><span>Photos</span></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab-details" class="nav-link" data-toggle="tab" role="tab">
+                            <div class="image-holder">
+                                <div class="text-center">
+                                    <div class="user-sellmycar-details-img mx-auto"></div><span>Car details</span></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab-comment" class="nav-link active" data-toggle="tab" role="tab">
+                            <div class="image-holder">
+                                <div class="text-center">
+                                    <div class="user-sellmycar-comment-img mx-auto"></div><span>Comment</span></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-photo" class="tab-pane" role="tabpanel"></div>
+                    <div id="tab-details" class="tab-pane" role="tabpanel"></div>
+                    <div id="tab-comment" class="tab-pane active" role="tabpanel">
+                        <div class="container-fluid border-lg-left border-lg-right border-lg-bottom">
+                            <div class="m-2 mb-4">
+                                <form method="post" class="user-sellmycar-form-container text-center">
+                                    <div class="form-group">
+                                        <h6 class="text-left">Phone number</h6><input class="form-control sellmycar-details-form-width" type="tel" name="phone" placeholder="Phone number"><small class="form-text text-left text-info">This phone number will not be shown to anyone until you select a dealer to sell your car.<br></small>
+                                        <small
+                                            class="form-text text-uppercase text-left text-danger">Not valid Phone number</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <h6 class="text-left">Location of your car</h6>
+                                        <div class="form-row">
+                                            <div class="col-md-4 py-1 px-2"><input class="form-control" type="text" name="postcode" placeholder="Postcode"></div>
+                                            <div class="col-md-4 py-1 px-2"><input class="form-control" type="text" name="suburbs" placeholder="Suburbs"></div>
+                                            <div class="col-md-4 py-1 px-2"><select class="form-control"><option value="states" selected="">States</option></select></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h6 class="text-left">Has your car been written-off?</h6>
+                                        <ul class="list-group sellmycar-details-form-width">
+                                            <li class="list-group-item sellmycar-details-form-select"><span>Yes</span></li>
+                                            <li class="list-group-item active sellmycar-details-form-select"><span>No</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="form-group">
+                                        <h6 class="text-left">Comments</h6><textarea class="form-control" rows="6" name="comments" disabled="" placeholder="If you like to tell dealers anything about your car, this is right place."></textarea></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right d-flex justify-content-between mt-4"><button class="btn btn-primary" type="button">Previous</button><button class="btn btn-primary" type="button">Next</button></div>
+        </div>
+    </section>
+    <footer class="bg-dark container-fluid">
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-center py-4"><img src="assets/img/RED-GREY-CIRCLE-trans-150x157.png" width="100px" height="100px"></div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center py-4"><a class="text-center border rounded-circle footer-social-icon" href="./"><i class="fa fa-facebook-f d-lg-flex"></i></a><a class="text-center border rounded-circle footer-social-icon" href="./"><i class="fa fa-instagram"></i></a><a class="text-center border rounded-circle footer-social-icon"
+                    href="./"><i class="fa fa-envelope-o"></i></a><a class="text-center border rounded-circle footer-social-icon" href="./"><i class="fa fa-wordpress"></i></a></div>
+        </div>
+    </footer>
+    <footer class="bg-black text-white-50 container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-2 py-1 py-lg-3 text-center"><i class="fa fa-angle-double-up"></i></div>
+            <div class="col-lg-4 order-lg-1 py-1 py-lg-3 text-center"><span>COPYRIGHT © 2019 IMDEALER™ INC.</span></div>
+            <div class="col-lg-4 order-lg-3 py-1 py-lg-3 text-center"><span>BE WITH&nbsp;<i class="fa fa-heart text-danger"></i>&nbsp;IDEALIS GROUP</span></div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
