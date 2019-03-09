@@ -35,10 +35,10 @@
         </div>
     </header>
     <section>
-        <div class="p-md-4 p-2">
+        <div class="p-md-4 p-2 sellmycar-section-min-height">
             <div>
                 <div class="progress">
-                    <div class="progress-bar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">66%</div>
+                    <div class="progress-bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
                 </div>
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
@@ -58,7 +58,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#tab-comment" class="nav-link active" data-toggle="tab" role="tab">
+                        <a href="#tab-comment" class="nav-link" data-toggle="tab" role="tab">
                             <div class="image-holder">
                                 <div class="text-center">
                                     <div class="user-sellmycar-comment-img mx-auto"></div><span>Comment</span></div>
@@ -66,7 +66,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="user_sellmycar_step4_done.html" class="nav-link" data-toggle="tab" role="tab">
+                        <a href="user_sellmycar_step4_done.html" class="nav-link active" data-toggle="tab" role="tab">
                             <div class="image-holder">
                                 <div class="text-center">
                                     <div class="user-sellmycar-done-img mx-auto"></div><span>Done</span></div>
@@ -75,37 +75,25 @@
                     </li>
                 </ul>
                 <div class="tab-content">
-                    <div id="tab-comment" class="tab-pane active" role="tabpanel">
+                    <div id="tab-done" class="tab-pane active" role="tabpanel">
                         <div class="container-fluid border-lg-left border-lg-right border-lg-bottom">
                             <div class="m-2 mb-4">
-                                <form method="post" class="user-sellmycar-form-container text-center">
-                                    <div class="form-group">
-                                        <h6 class="text-left">Phone number</h6><input class="form-control sellmycar-details-form-width" type="tel" name="phone" placeholder="Phone number"><small class="form-text text-left text-info">This phone number will not be shown to anyone until you select a dealer to sell your car.<br></small>
-                                        <small
-                                            class="form-text text-uppercase text-left text-danger">Not valid Phone number</small>
-                                    </div>
-                                    <div class="form-group">
-                                        <h6 class="text-left">Location of your car</h6>
-                                        <div class="form-row">
-                                            <div class="col-md-4 py-1 px-2"><input class="form-control" type="text" name="postcode" placeholder="Postcode"></div>
-                                            <div class="col-md-4 py-1 px-2"><input class="form-control" type="text" name="suburbs" placeholder="Suburbs"></div>
-                                            <div class="col-md-4 py-1 px-2"><select class="form-control"><option value="states" selected="">States</option></select></div>
-                                        </div><small class="form-text text-uppercase text-left text-danger">Not valid location</small></div>
-                                    <div class="form-group">
-                                        <h6 class="text-left">Has your car been written-off?</h6>
-                                        <ul class="list-group sellmycar-details-form-width">
-                                            <li class="list-group-item sellmycar-details-form-select"><span>Yes</span></li>
-                                            <li class="list-group-item active sellmycar-details-form-select"><span>No</span></li>
-                                        </ul><small class="form-text text-uppercase text-left text-danger">Not valid answer</small></div>
-                                    <div class="form-group">
-                                        <h6 class="text-left">Comments</h6><textarea class="form-control" rows="6" name="comments" placeholder="If you like to tell dealers anything about your car, this is right place."></textarea><small class="form-text text-uppercase text-left text-danger">Not valid comments</small></div>
-                                </form>
+                                <div>
+                                    <p class="fs-xlarge">Thank you!<br>Your car is now ready to be auctioned. Here are few things for you to know better in our process.</p>
+                                    <ul class="fs-larger">
+                                        <li>Your application cannot be modified for the characteristics of auction. Only if you made a mistake on the application, contact us.</li>
+                                        <li>Our dealers will be provided a car history report from your car plate number and VIN.</li>
+                                        <li>Your car auction will be begun after inspection from imdealer service team.</li>
+                                        <li>The auction will last in 48 hours after begun unless maximum bidding is furfilled.</li>
+                                        <li>In case this application is submitted after 5pm, inspection will be performed in the next morning.</li>
+                                        <li>In case this application is submitted after 5pm on Friday, inspection will be performed in the next Monday morning.</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-right d-flex justify-content-between mt-4"><button class="btn btn-primary" type="button">Previous</button><button class="btn btn-primary" type="button">Next</button></div>
         </div>
     </section>
     <footer class="bg-dark container-fluid">
