@@ -34,33 +34,31 @@
             <form method="post" class="form-container text-center bg-light py-5">
                 <h2 class="text-center text-capitalize text-dark font-weight-light"><strong>SIGN UP</strong></h2>
                 <h5 class="text-left text-capitalize text-dark mt-5 mb-3">personal Profile</h5>
-                <div class="image-holder"><img class="rounded-circle img-fluid border border-secondary" src="assets/img/add-image-icon-png-7.jpg" width="80px"></div>
+                <div class="image-holder"><img class="rounded-circle img-fluid border border-secondary" src="assets/img/add-image-icon-png-7.jpg" width="80px"><small class="form-text text-uppercase text-left text-danger">Invalid Photo</small></div>
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6 mb-3 mb-md-0"><input class="form-control" type="text" name="First name" placeholder="First name"></div>
                         <div class="col-md-6"><input class="form-control" type="text" name="Last name" placeholder="Last name"></div>
-                    </div>
-                </div>
-                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
-                <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-                <div class="form-group"><input class="form-control" type="password" name="confirm password" placeholder="Confirm Password"></div>
-                <div class="form-group"><input class="form-control" type="tel" name="Mobile number" placeholder="Mobile number"></div>
+                    </div><small class="form-text text-uppercase text-left text-danger">Invalid Name</small></div>
+                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"><small class="form-text text-uppercase text-left text-danger">Invalid Email</small></div>
+                <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"><small class="form-text text-uppercase text-left text-danger">Invalid Password</small></div>
+                <div class="form-group"><input class="form-control" type="password" name="confirm password" placeholder="Confirm Password"><small class="form-text text-uppercase text-left text-danger">Different Password</small></div>
+                <div class="form-group"><input class="form-control" type="tel" name="Mobile number" placeholder="Mobile number"><small class="form-text text-uppercase text-left text-danger">Invalid mobile number</small></div>
                 <h5 class="text-left text-capitalize text-dark mt-5 mb-4">Company Profile</h5>
-                <div class="form-group"><input class="form-control" type="text" name="Company ABN" placeholder="Company ABN"></div>
-                <div class="form-group"><input class="form-control" type="text" name="Dealer license no." placeholder="Dealer license no."></div>
-                <div class="form-group"><input class="form-control" type="text" name="Company name" placeholder="Company name"></div>
-                <div class="form-group"><input class="form-control" type="text" name="Street 1" placeholder="Street 1"></div>
-                <div class="form-group"><input class="form-control" type="text" name="Street 2" placeholder="Street 2"></div>
+                <div class="form-group"><input class="form-control" type="text" name="Company ABN" placeholder="Company ABN"><small class="form-text text-uppercase text-left text-danger">Invalid abn</small></div>
+                <div class="form-group"><input class="form-control" type="text" name="Dealer license number" placeholder="Dealer license number"><small class="form-text text-uppercase text-left text-danger">Invalid license number</small></div>
+                <div class="form-group"><input class="form-control" type="text" name="Company name" placeholder="Company name"><small class="form-text text-uppercase text-left text-danger">Invalid Company Name</small></div>
+                <div class="form-group"><input class="form-control" type="text" name="Street 1" placeholder="Street 1"><small class="form-text text-uppercase text-left text-danger">Invalid address</small></div>
+                <div class="form-group"><input class="form-control" type="text" name="Street 2" placeholder="Street 2"><small class="form-text text-uppercase text-left text-danger">Invalid address</small></div>
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-8 mb-3 mb-md-0"><input class="form-control" type="text" name="Suburbs" placeholder="Suburbs"></div>
                         <div class="col-md-4"><select class="form-control" name="States" value="Choose..."><option value="ACT">ACT</option><option value="NSW" selected="">NSW</option><option value="NT">NT</option><option value="QLD">QLD</option><option value="SA">SA</option><option value="VIC">VIC</option><option value="WA">WA</option></select></div>
-                    </div>
-                </div>
-                <div class="form-group"><input class="form-control w-50" type="text" name="Postcode" placeholder="Postcode"></div>
+                    </div><small class="form-text text-uppercase text-left text-danger">Invalid suburbs or states</small></div>
+                <div class="form-group"><input class="form-control w-50" type="text" name="Postcode" placeholder="Postcode"><small class="form-text text-uppercase text-left text-danger">Invalid postcode</small></div>
                 <h5 class="text-left text-capitalize text-dark mt-5 mb-4">Comment</h5>
-                <div class="form-group"><textarea class="form-control h-50" placeholder="This comment will be shown to  customer"></textarea></div>
-                <div class="form-group"><button class="btn btn-primary btn-block mt-5 bg-imdealer border-0" type="submit">Sign up</button></div><span>By creating an account, you agree our&nbsp;<a href="./" class="link-inline">terms.</a></span></form>
+                <div class="form-group"><textarea class="form-control h-50" rows="5" placeholder="This comment will be shown to  customer"></textarea><small class="form-text text-uppercase text-left text-danger">Invalid Comments</small></div>
+                <div class="form-group"><button class="btn btn-primary btn-block mt-5 bg-imdealer border-0" type="submit">Sign up</button></div><span>By creating an account, you agree our&nbsp;<a href="./" class="link-inline">T&amp;C.</a></span></form>
             <div class="form-container bg-light-grey py-3"><a href="./" class="link">Already a member?&nbsp;Sign in here.</a></div>
         </div>
     </header>
