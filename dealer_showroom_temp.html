@@ -29,18 +29,30 @@
                 </ul><span class="d-flex navbar-text font-weight-bold text-dark"><a href="./">SIGN IN</a></span></div>
         </div>
     </nav>
-    <header class="pt-4 pb-5 dealer-signinup-bg-img">
+    <header class="pt-4 pb-5 showroom-bg-img">
         <div class="container-fluid px-5 py-3"><img src="assets/img/logo_text_only_all-white.svg" width="120px"></div>
-        <div class="signup-form-container mt-3 mb-5">
-            <form method="post" class="form-container mt-3 text-center bg-light">
-                <h2 class="text-center text-capitalize text-dark font-weight-light mb-4"><strong>Forgot password</strong></h2>
-                <p>Enter your email address and we'll send you a link to reset your password.</p>
-                <div class="form-group"><input class="form-control mt-5" type="email" name="email" placeholder="Email"></div>
-                <div class="form-group mb-5"><button class="btn btn-primary btn-block mt-5 bg-imdealer border-0" type="submit">Send link</button></div>
-            </form>
-            <div class="form-container py-3 bg-light-grey"><a href="./" class="link">Not a member? Click here.</a></div>
+        <div class="text-center text-light display-2">
+            <h1 class="display-4">SHOWROOM</h1>
+        </div>
+        <div class="container-fluid form-row filter-container mt-3">
+            <div class="row">
+                <div class="col-6 col-md-4 filter-column"><select class="custom-select"><option value="make" selected="">make</option></select></div>
+                <div class="col-6 col-md-4 filter-column"><select class="custom-select"><option value="model" selected="">model</option></select></div>
+                <div class="col-6 col-md-4 filter-column"><select class="custom-select"><option value="year" selected="">year</option></select></div>
+                <div class="col-6 col-md-4 filter-column"><select class="custom-select"><option value="transmission" selected="">transmission</option></select></div>
+                <div class="col-6 col-md-4 filter-column"><select class="custom-select"><option value="states" selected="">states</option></select></div>
+                <div class="col-6 col-md-4 filter-column"><select class="custom-select"><option value="fuel" selected="">fuel</option></select></div>
+                <div class="col-12 filter-column"><button class="btn btn-primary bg-imdealer border-0 w-25" type="button">search</button></div>
+            </div>
         </div>
     </header>
+    <section>
+        <div class="container mt-3">
+            <div class="text-center">
+                <h1 class="display-4 mb-4">Showroom is closed now</h1>
+                <p class="fs-large">We will open our showroom after we open our website to public.<br>We certainly will send you an email when we open our showroom. <br>Please sit and wait for our email.</p><img class="img-fluid mb-5" src="assets/img/dealer_showroom.temp.jpg"></div>
+        </div>
+    </section>
     <footer class="bg-black text-white-50 container-fluid">
         <div class="row align-items-center">
             <div class="col-lg-4 order-lg-2 py-1 py-lg-3 text-center">
@@ -51,19 +63,6 @@
             <div class="col-lg-4 order-lg-3 py-1 py-lg-3 text-center"><span>BE WITH&nbsp;<i class="fa fa-heart text-danger"></i>&nbsp;IDEALIS GROUP</span></div>
         </div>
     </footer>
-    <div class="modal fade" role="dialog" tabindex="-1">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="image-wrapper"><img src="assets/img/logo%20image%20only.svg" height="150px"></div>
-                        <p class="lead text-center mt-3">Thank you. <br>Check your email.&nbsp;We've sent you an email with a link to reset your passwrod</p>
-                    </div>
-                </div>
-                <div class="modal-footer justify-content-center"><button class="btn btn-primary w-25" type="button">OK</button></div>
-            </div>
-        </div>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 </body>
