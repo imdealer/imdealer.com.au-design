@@ -19,7 +19,7 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md sticky-top bg-light">
-        <div class="container-fluid"><a class="navbar-brand text-dark" href="./"><i class="fa fa-home"></i></a><button class="navbar-toggler border rounded border-dark" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand text-dark"><i class="fa fa-home"></i></a><button data-toggle="collapse" class="navbar-toggler border rounded border-dark" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse text-align-right" id="navcol-1">
                 <ul class="nav navbar-nav mr-auto">
@@ -48,11 +48,11 @@
                         </div>
                         <div class="text-center"><span class="dealer-mypage-name">John Yun</span></div>
                     </div>
-                    <div id="v-pills-tab" class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical"><a href="#v-pills-auction" id="v-pills-auction-tab" class="nav-link active" data-toggle="pill" role="target" aria-selected="true">Auction</a><a href="#v-pills-setting" id="v-pills-setting-tab" class="nav-link" data-toggle="pill" role="target"
-                            aria-selected="false">Setting</a><a href="#v-pills-profile" id="v-pills-profile-tab" class="nav-link" data-toggle="pill" role="target" aria-selected="false">Profile</a><a href="#v-pills-changepassword" id="v-pills-changepassword-tab"
-                            class="nav-link" data-toggle="pill" role="target" aria-selected="false">Change Password</a><a href="#v-pills-referral" id="v-pills-referral-tab" class="nav-link" data-toggle="pill" role="target" aria-selected="false">My Referral</a>
+                    <div id="v-pills-tab" class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical"><a id="v-pills-auction-tab" class="nav-link active" data-toggle="pill" role="target" aria-selected="true" href="#v-pills-auction">Auction</a><a id="v-pills-setting-tab" class="nav-link" data-toggle="pill" role="target" aria-selected="false"
+                            href="#v-pills-setting">Setting</a><a id="v-pills-profile-tab" class="nav-link" data-toggle="pill" role="target" aria-selected="false" href="#v-pills-profile">Profile</a><a id="v-pills-changepassword-tab" class="nav-link" data-toggle="pill"
+                            role="target" aria-selected="false" href="#v-pills-changepassword">Change Password</a><a id="v-pills-referral-tab" class="nav-link" data-toggle="pill" role="target" aria-selected="false" href="#v-pills-referral">My Referral</a>
                         <a
-                            href="#v-pills-coupons" id="v-pills-coupons-tab" class="nav-link" data-toggle="pill" role="target" aria-selected="false">Coupons</a>
+                            id="v-pills-coupons-tab" class="nav-link" data-toggle="pill" role="target" aria-selected="false" href="#v-pills-coupons">Coupons</a>
                     </div>
                 </div>
                 <div class="col-9">
@@ -1352,8 +1352,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <form method="post" class="dealer-mypage-form-container text-center my-4">
-                                    <div class="form-group"><button class="btn btn-primary btn-block bg-imdealer border-0 w-50" type="submit">Change</button></div>
+                                <form class="dealer-mypage-form-container text-center my-4" method="post">
+                                    <div class="form-group"><button class="btn btn-primary btn-block bg-imdealer border-0 w-50">Change</button></div>
                                 </form>
                             </div>
                         </div>
@@ -1361,7 +1361,7 @@
                             <div>
                                 <div class="m-2 mb-4">
                                     <h3>My Profile</h3>
-                                    <form method="post" class="dealer-mypage-form-container text-center">
+                                    <form class="dealer-mypage-form-container text-center" method="post">
                                         <h5 class="text-left text-capitalize text-dark mt-4 mb-4">personal Profile</h5>
                                         <div class="form-group"><input class="form-control" type="tel" name="Mobile number" placeholder="Mobile number"></div>
                                         <h5 class="text-left text-capitalize text-dark mt-4 mb-4">Company Profile</h5>
@@ -1379,7 +1379,7 @@
                                         <div class="form-group"><input class="form-control w-50" type="text" name="Postcode" placeholder="Postcode"></div>
                                         <h5 class="text-left text-capitalize text-dark mt-4 mb-4">Comment</h5>
                                         <div class="form-group"><textarea class="form-control h-50" placeholder="This comment will be shown to  customer"></textarea></div>
-                                        <div class="form-group"><button class="btn btn-primary btn-block mt-4 bg-imdealer border-0 w-50" type="submit">Change</button></div>
+                                        <div class="form-group"><button class="btn btn-primary btn-block mt-4 bg-imdealer border-0 w-50">Change</button></div>
                                     </form>
                                 </div>
                             </div>
@@ -1389,11 +1389,11 @@
                                 <div class="m-2 mb-4">
                                     <h3>Change Password</h3>
                                 </div>
-                                <form method="post" class="dealer-mypage-form-container mt-3 text-center">
+                                <form class="dealer-mypage-form-container mt-3 text-center" method="post">
                                     <div class="form-group"><input class="form-control" type="password" name="current password" placeholder="Current Password"></div>
                                     <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
                                     <div class="form-group"><input class="form-control" type="password" name="confirm password" placeholder="Confirm Password"></div>
-                                    <div class="form-group mb-5"><button class="btn btn-primary btn-block mt-5 bg-imdealer border-0 w-50" type="submit">Change</button></div>
+                                    <div class="form-group mb-5"><button class="btn btn-primary btn-block mt-5 bg-imdealer border-0 w-50">Change</button></div>
                                 </form>
                             </div>
                         </div>

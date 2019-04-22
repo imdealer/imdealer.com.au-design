@@ -19,7 +19,7 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md sticky-top bg-light">
-        <div class="container-fluid"><a class="navbar-brand text-dark" href="./"><i class="fa fa-home"></i></a><button class="navbar-toggler border rounded border-dark" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand text-dark"><i class="fa fa-home"></i></a><button data-toggle="collapse" class="navbar-toggler border rounded border-dark" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse text-align-right" id="navcol-1">
                 <ul class="nav navbar-nav mr-auto">
@@ -42,7 +42,7 @@
                 </div>
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a href="#tab-photo" class="nav-link" data-toggle="tab" role="tab">
+                        <a class="nav-link" data-toggle="tab" role="tab" href="#tab-photo">
                             <div class="image-holder">
                                 <div class="text-center">
                                     <div class="user-sellmycar-photo-img mx-auto"></div><span>Photos</span></div>
@@ -50,7 +50,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#tab-details" class="nav-link" data-toggle="tab" role="tab">
+                        <a class="nav-link" data-toggle="tab" role="tab" href="#tab-details">
                             <div class="image-holder">
                                 <div class="text-center">
                                     <div class="user-sellmycar-details-img mx-auto"></div><span>Car details</span></div>
@@ -58,7 +58,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#tab-comment" class="nav-link active" data-toggle="tab" role="tab">
+                        <a class="nav-link active" data-toggle="tab" role="tab" href="#tab-comment">
                             <div class="image-holder">
                                 <div class="text-center">
                                     <div class="user-sellmycar-comment-img mx-auto"></div><span>Comment</span></div>
@@ -66,7 +66,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="user_sellmycar_step4_done.html" class="nav-link" data-toggle="tab" role="tab">
+                        <a class="nav-link" data-toggle="tab" role="tab" href="user_sellmycar_step4_done.html">
                             <div class="image-holder">
                                 <div class="text-center">
                                     <div class="user-sellmycar-done-img mx-auto"></div><span>Done</span></div>
@@ -78,7 +78,7 @@
                     <div id="tab-comment" class="tab-pane active" role="tabpanel">
                         <div class="container-fluid border-lg-left border-lg-right border-lg-bottom">
                             <div class="m-2 mb-4">
-                                <form method="post" class="user-sellmycar-form-container text-center">
+                                <form class="user-sellmycar-form-container text-center" method="post">
                                     <div class="form-group">
                                         <h6 class="text-left">Phone number</h6><input class="form-control sellmycar-details-form-width" type="tel" name="phone" placeholder="Phone number"><small class="form-text text-left text-info">This phone number will not be shown to anyone until you select a dealer to sell your car.<br></small>
                                         <small
@@ -98,14 +98,14 @@
                                             <li class="list-group-item active sellmycar-details-form-select"><span>No</span></li>
                                         </ul><small class="form-text text-uppercase text-left text-danger">Not valid answer</small></div>
                                     <div class="form-group">
-                                        <h6 class="text-left">Comments</h6><textarea class="form-control" rows="6" name="comments" placeholder="If you like to tell dealers anything about your car, this is right place."></textarea><small class="form-text text-uppercase text-left text-danger">Not valid comments</small></div>
+                                        <h6 class="text-left">Comments</h6><textarea class="form-control" name="comments" placeholder="If you like to tell dealers anything about your car, this is right place." rows="6"></textarea><small class="form-text text-uppercase text-left text-danger">Not valid comments</small></div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-right d-flex justify-content-between mt-4"><button class="btn btn-primary" type="button">Previous</button><button class="btn btn-primary" type="button">Next</button></div>
+            <div class="text-right d-flex justify-content-between mt-4"><button class="btn btn-primary">Previous</button><button class="btn btn-primary">Next</button></div>
         </div>
     </section>
     <footer class="bg-black text-white-50 container-fluid">
