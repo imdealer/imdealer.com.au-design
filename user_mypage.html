@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>imdealer_dev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top bg-light">
+        <div class="container-fluid"><a class="navbar-brand text-dark" href="./"><i class="fa fa-home"></i></a><button data-toggle="collapse" class="navbar-toggler border rounded border-dark" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse text-align-right" id="navcol-1">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="./">FAQ</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="./">SHOWROOM</a></li>
+                </ul><span class="d-flex navbar-text font-weight-bold text-dark"><a href="./">SIGN IN</a></span></div>
+        </div>
+    </nav>
+    <header class="pt-4 pb-5 faq-bg-img">
+        <div class="container-fluid m-4"><img src="assets/img/logo_text_only_all-white.svg" width="120px"></div>
+        <div class="text-center text-light display-2">
+            <h1 class="display-4">My page</h1>
+        </div>
+    </header>
+    <section class="min-vh-50">
+        <div class="container dealer-mypage-container-min-height my-5">
+            <div class="row">
+                <div class="col-4">
+                    <div class="mt-3 mb-4 mx-0">
+                        <div class="image-holder d-flex justify-content-center">
+                            <div class="mypage-face-image dealer-mypage-face-img">
+                                <div class="button-overlay">
+                                    <div class="button"><i class="fa fa-photo"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center"><span class="dealer-mypage-name">John Yun</span></div>
+                    </div>
+                    <div id="v-pills-tab" class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical"><a id="v-pills-auction-tab" class="nav-link active" data-toggle="pill" role="target" aria-selected="true" href="#v-pills-auction">Auction</a><a id="v-pills-profile-tab" class="nav-link" data-toggle="pill" role="target" aria-selected="false"
+                            href="#v-pills-profile">Profile</a><a id="v-pills-changepassword-tab" class="nav-link" data-toggle="pill" role="target" aria-selected="false" href="#v-pills-changepassword">Change Password</a></div>
+                </div>
+                <div class="col-8">
+                    <div id="v-pills-tabContent" class="tab-content">
+                        <div id="v-pills-auction" class="tab-pane fade show active" role="tabpanel" aria-labelledby="v-pills-auction-tab">
+                            <div>
+                                <div class="m-2 mb-4">
+                                    <h3>My Auction</h3>
+                                </div>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-lg-3 col-sm-6 p-2">
+                                            <div class="showroom-items-col">
+                                                <div class="showroom-items-bid-endingsoon d-flex justify-content-center font-weight-bold py-2">
+                                                    <div><span class="text-uppercase">On InSpection</span></div>
+                                                </div>
+                                                <div class="image-wrapper p-1">
+                                                    <div class="image showroom-sample-image">
+                                                        <div class="button-overlay">
+                                                            <div class="button"><span>VIEW</span><i class="fa fa-external-link"></i></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="showroom-items-title mt-1 mb-1">
+                                                    <h6 class="mr-1">2018</h6>
+                                                    <h6 class="mr-1">MAZDA</h6>
+                                                    <h6>CX-5</h6>
+                                                </div>
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-3 d-flex flex-column align-items-center p-1"><i class="fas fa-tachometer-alt fs-large"></i><span class="fs-xsmall">556000</span></div>
+                                                        <div class="col-3 d-flex flex-column align-items-center p-1"><i class="fas fa-map-marker-alt fs-large"></i><span class="fs-xsmall">Incheon</span></div>
+                                                        <div class="col-3 d-flex flex-column align-items-center p-1"><i class="fas fa-gas-pump fs-large"></i><span class="fs-xsmall">Petrol</span></div>
+                                                        <div class="col-3 d-flex flex-column align-items-center p-1"><i class="fas fa-cogs ffs-large"></i><span class="fs-xsmall">Auto</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-fluid d-flex justify-content-center py-2">
+                                                    <div class="row mb-1">
+                                                        <div class="col-auto showroom-items-details-title font-weight-bold"><span>MAX BID</span></div>
+                                                        <div class="col-auto d-flex justify-content-end showroom-items-details-text font-weight-bold"><span>$0</span></div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="showroom-items-details d-none">
+                                                    <div class="showroom-items-info">
+                                                        <div class="row">
+                                                            <div class="col-6 showroom-items-details-title"><span>Odometer</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>70,000 km</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>body type</span></div>
+                                                            <div class="col-6 text-uppercase d-flex justify-content-end showroom-items-details-text"><span>SUV</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>fuel type</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>Petrol</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>transmission</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>Auto</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>rego expiry</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>07/2019</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>Location</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>Homebush</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>POSTCODE</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>2140</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3 col-sm-6 p-2">
+                                            <div class="showroom-items-col">
+                                                <div class="showroom-items-bid-endingsoon d-flex justify-content-center font-weight-bold py-2">
+                                                    <div><span class="text-uppercase">ON AUCTION</span></div>
+                                                </div>
+                                                <div class="image-wrapper p-1">
+                                                    <div class="image showroom-sample-image">
+                                                        <div class="button-overlay">
+                                                            <div class="button"><span>VIEW</span><i class="fa fa-external-link"></i></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="showroom-items-title mt-1 mb-1">
+                                                    <h6 class="mr-1">2018</h6>
+                                                    <h6 class="mr-1">MAZDA</h6>
+                                                    <h6>CX-5</h6>
+                                                </div>
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-3 d-flex flex-column align-items-center p-1"><i class="fas fa-tachometer-alt fs-large"></i><span class="fs-xsmall">556000</span></div>
+                                                        <div class="col-3 d-flex flex-column align-items-center p-1"><i class="fas fa-map-marker-alt fs-large"></i><span class="fs-xsmall">Incheon</span></div>
+                                                        <div class="col-3 d-flex flex-column align-items-center p-1"><i class="fas fa-gas-pump fs-large"></i><span class="fs-xsmall">Petrol</span></div>
+                                                        <div class="col-3 d-flex flex-column align-items-center p-1"><i class="fas fa-cogs ffs-large"></i><span class="fs-xsmall">Auto</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-fluid d-flex justify-content-center py-2">
+                                                    <div class="row mb-1">
+                                                        <div class="col-auto showroom-items-details-title font-weight-bold"><span>MAX BID</span></div>
+                                                        <div class="col-auto d-flex justify-content-end showroom-items-details-text font-weight-bold"><span>$47,000</span></div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="showroom-items-details d-none">
+                                                    <div class="showroom-items-info">
+                                                        <div class="row">
+                                                            <div class="col-6 showroom-items-details-title"><span>Odometer</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>70,000 km</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>body type</span></div>
+                                                            <div class="col-6 text-uppercase d-flex justify-content-end showroom-items-details-text"><span>SUV</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>fuel type</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>Petrol</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>transmission</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>Auto</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>rego expiry</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>07/2019</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>Location</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>Homebush</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>POSTCODE</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>2140</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3 col-sm-6 p-2">
+                                            <div class="showroom-items-col">
+                                                <div class="showroom-items-won d-flex justify-content-center font-weight-bold py-2">
+                                                    <div><span class="text-uppercase">Closed</span></div>
+                                                </div>
+                                                <div class="image-wrapper p-1">
+                                                    <div class="image showroom-sample-image">
+                                                        <div class="button-overlay">
+                                                            <div class="button"><span>VIEW</span><i class="fa fa-external-link"></i></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="showroom-items-title mt-1 mb-1">
+                                                    <h6 class="mr-1">2018</h6>
+                                                    <h6 class="mr-1">MAZDA</h6>
+                                                    <h6>CX-5</h6>
+                                                </div>
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-3 d-flex flex-column align-items-center p-1"><i class="fas fa-tachometer-alt fs-large"></i><span class="fs-xsmall">556000</span></div>
+                                                        <div class="col-3 d-flex flex-column align-items-center p-1"><i class="fas fa-map-marker-alt fs-large"></i><span class="fs-xsmall">Incheon</span></div>
+                                                        <div class="col-3 d-flex flex-column align-items-center p-1"><i class="fas fa-gas-pump fs-large"></i><span class="fs-xsmall">Petrol</span></div>
+                                                        <div class="col-3 d-flex flex-column align-items-center p-1"><i class="fas fa-cogs ffs-large"></i><span class="fs-xsmall">Auto</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-fluid d-flex justify-content-center py-1"><a class="btn btn-outline-dark btn-sm btn-block btn-round-little" role="button" href="#" data-toggle="modal" data-target="#auction-3-result">+ view</a></div>
+                                                <div class="showroom-items-details d-none">
+                                                    <div class="showroom-items-info">
+                                                        <div class="row">
+                                                            <div class="col-6 showroom-items-details-title"><span>Odometer</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>70,000 km</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>body type</span></div>
+                                                            <div class="col-6 text-uppercase d-flex justify-content-end showroom-items-details-text"><span>SUV</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>fuel type</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>Petrol</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>transmission</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>Auto</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>rego expiry</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>07/2019</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>Location</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>Homebush</span></div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-6 showroom-items-details-title"><span>POSTCODE</span></div>
+                                                            <div class="col-6 d-flex justify-content-end showroom-items-details-text"><span>2140</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="v-pills-profile" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div>
+                                <div class="m-2 mb-4">
+                                    <h3>My Profile</h3>
+                                    <form class="dealer-mypage-form-container text-center" method="post">
+                                        <div class="form-group"><input class="form-control" type="tel" name="Mobile number" placeholder="Mobile number"></div>
+                                        <div class="form-group">
+                                            <div class="form-row">
+                                                <div class="col-md-8 mb-3 mb-md-0"><input class="form-control" type="text" name="Suburbs" placeholder="Suburbs"></div>
+                                                <div class="col-md-4"><select class="form-control" name="States" value="Choose..."><option value="ACT">ACT</option><option value="NSW" selected="">NSW</option><option value="NT">NT</option><option value="QLD">QLD</option><option value="SA">SA</option><option value="VIC">VIC</option><option value="WA">WA</option></select></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group"><input class="form-control w-50" type="text" name="Postcode" placeholder="Postcode"></div>
+                                        <div class="form-group"><button class="btn btn-primary btn-block mt-4 bg-imdealer border-0 w-50" type="submit">Change</button></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="v-pills-changepassword" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-changepassword-tab">
+                            <div>
+                                <div class="m-2 mb-4">
+                                    <h3>Change Password</h3>
+                                </div>
+                                <form class="dealer-mypage-form-container mt-3 text-center" method="post">
+                                    <div class="form-group"><input class="form-control" type="password" name="current password" placeholder="Current Password"></div>
+                                    <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
+                                    <div class="form-group"><input class="form-control" type="password" name="confirm password" placeholder="Confirm Password"></div>
+                                    <div class="form-group mb-5"><button class="btn btn-primary btn-block mt-5 bg-imdealer border-0 w-50" type="submit">Change</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black text-white-50 container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-2 py-1 py-lg-3 text-center">
+                <div class="d-flex justify-content-center align-items-center py-4"><a class="text-center border rounded-circle footer-social-icon" href="https://www.facebook.com/idealis89/" target="_blank"><i class="fa fa-facebook-f d-lg-flex"></i></a><a class="text-center border rounded-circle footer-social-icon d-none"
+                        href="./"><i class="fa fa-instagram"></i></a><a class="text-center border rounded-circle footer-social-icon" href="http://blog.imdealer.com.au/en/" target="_blank"><i class="fa fa-wordpress"></i></a><a class="text-nowrap text-center border rounded-circle footer-social-icon"
+                        href="mailto:info@imdealer.com.au" target="_blank"><i class="fa fa-envelope-o"></i></a></div>
+            </div>
+            <div class="col-lg-4 order-lg-1 py-1 py-lg-3 text-center"><span>COPYRIGHT © 2019 IMDEALER™ INC.</span></div>
+            <div class="col-lg-4 order-lg-3 py-1 py-lg-3 text-center"><span>BE WITH&nbsp;<i class="fa fa-heart text-danger"></i>&nbsp;IDEALIS GROUP</span></div>
+        </div>
+    </footer>
+    <div class="modal fade" role="dialog" tabindex="-1" id="auction-3-result">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Auction result</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-4 fs-small">
+                            <div id="v-pills-tab" class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical"><a id="v-pills-overview-tab" class="nav-link text-center active" data-toggle="pill" role="target" aria-selected="true" href="#v-pills-overview"><span class="font-weight-bold">Overview</span></a><a id="v-pills-mark-tab" class="nav-link text-center"
+                                    data-toggle="pill" role="target" aria-selected="false" href="#v-pills-mark"><span class="font-weight-bold">Mark</span></a><a id="v-pills-john-tab" class="nav-link text-center" data-toggle="pill" role="target" aria-selected="false"
+                                    href="#v-pills-john"><span class="font-weight-bold">John</span></a><a id="v-pills-jason-tab" class="nav-link text-center" data-toggle="pill" role="target" aria-selected="false" href="#v-pills-jason"><span class="font-weight-bold">Jason</span></a>
+                                <a
+                                    id="v-pills-steve-tab" class="nav-link text-center" data-toggle="pill" role="target" aria-selected="false" href="#v-pills-steve"><span class="font-weight-bold">Steve</span></a><a id="v-pills-siwoo-tab" class="nav-link text-center" data-toggle="pill" role="target" aria-selected="false" href="#v-pills-siwoo"><span class="font-weight-bold">Siwoo</span></a></div>
+                        </div>
+                        <div class="col-8">
+                            <div id="v-pills-tabContent" class="tab-content">
+                                <div id="v-pills-overview" class="tab-pane fade show active" role="tabpanel" aria-labelledby="v-pills-overview-tab">
+                                    <div>
+                                        <div class="text-center m-2 mb-4">
+                                            <h5>Biddings</h5>
+                                        </div>
+                                        <div class="container-fluid my-3">
+                                            <div><canvas data-bs-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Mark&quot;,&quot;John&quot;,&quot;Jason&quot;,&quot;Steve&quot;,&quot;Siwoo&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Revenue&quot;,&quot;backgroundColor&quot;:&quot;#4e73df&quot;,&quot;borderColor&quot;:&quot;#4e73df&quot;,&quot;data&quot;:[&quot;39800&quot;,&quot;38800&quot;,&quot;37800&quot;,&quot;36800&quot;,&quot;35800&quot;],&quot;fill&quot;:true}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:true,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{&quot;display&quot;:false,&quot;text&quot;:&quot;BID PRICE&quot;,&quot;fontSize&quot;:&quot;10&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;drawBorder&quot;:true,&quot;drawTicks&quot;:true,&quot;drawOnChartArea&quot;:false}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;drawBorder&quot;:true,&quot;drawTicks&quot;:true,&quot;drawOnChartArea&quot;:false}}]}}}"></canvas></div>
+                                        </div>
+                                        <div>
+                                            <div class="table-responsive fs-small">
+                                                <table class="table table-sm">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Highest bid</td>
+                                                            <td class="text-right">$39,800.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Average bid</td>
+                                                            <td class="text-right">$37,800.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>No. of bidders</td>
+                                                            <td class="text-right">13</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="v-pills-mark" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-mark-tab">
+                                    <div>
+                                        <div class="m-2 mb-4">
+                                            <h5 class="text-center">Mark WONG</h5>
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="row">
+                                                <div class="col d-flex justify-content-center align-items-center"><img src="assets/img/logo%20image%20only.svg" width="80px" height="80px"></div>
+                                                <div class="col d-flex flex-column text-center align-items-center justify-content-center">
+                                                    <h5>4.3 / 5.0</h5><span>Bid: $39,800.00</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4"><button class="btn btn-primary btn-block bg-imdealer fs-small" type="button" data-toggle="modal" data-target="#auction-selected">SELECT this dealer</button></div>
+                                        <div class="mb-4">
+                                            <h6 class="text-center">Dealer's comment</h6><textarea class="fs-small w-100" rows="5">Good dealer Good dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealer</textarea></div>
+                                        <div>
+                                            <h6 class="text-center">Reviews</h6>
+                                            <div class="user-mypage-modal-review-scroll fs-small">
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="v-pills-john" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-john-tab">
+                                    <div>
+                                        <div class="m-2 mb-4">
+                                            <h5 class="text-center">John Wick</h5>
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="row">
+                                                <div class="col d-flex justify-content-center align-items-center"><img src="assets/img/logo%20image%20only.svg" width="80px" height="80px"></div>
+                                                <div class="col d-flex flex-column text-center align-items-center justify-content-center">
+                                                    <h5>4.3 / 5.0</h5><span>Bid: $39,800.00</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4"><button class="btn btn-primary btn-block bg-imdealer fs-small" type="button" data-toggle="modal" data-target="#auction-other-selected">SELECT this dealer</button></div>
+                                        <div class="mb-4">
+                                            <h6 class="text-center">Dealer's comment</h6><textarea class="fs-small w-100" rows="5">Good dealer Good dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealer</textarea></div>
+                                        <div>
+                                            <h6 class="text-center">Reviews</h6>
+                                            <div class="user-mypage-modal-review-scroll fs-small">
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="v-pills-jason" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-jason-tab">
+                                    <div>
+                                        <div class="m-2 mb-4">
+                                            <h5 class="text-center">Jason Bourne</h5>
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="row">
+                                                <div class="col d-flex justify-content-center align-items-center"><img src="assets/img/logo%20image%20only.svg" width="80px" height="80px"></div>
+                                                <div class="col d-flex flex-column text-center align-items-center justify-content-center">
+                                                    <h5>4.3 / 5.0</h5><span>Bid: $39,800.00</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4"><button class="btn btn-primary btn-block bg-imdealer fs-small" type="button" data-toggle="modal" data-target="#auction-other-selected">SELECT this dealer</button></div>
+                                        <div class="mb-4">
+                                            <h6 class="text-center">Dealer's comment</h6><textarea class="fs-small w-100" rows="5">Good dealer Good dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealer</textarea></div>
+                                        <div>
+                                            <h6 class="text-center">Reviews</h6>
+                                            <div class="user-mypage-modal-review-scroll fs-small">
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="v-pills-steve" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-steve-tab">
+                                    <div>
+                                        <div class="m-2 mb-4">
+                                            <h5 class="text-center">Steve SEAGULL</h5>
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="row">
+                                                <div class="col d-flex justify-content-center align-items-center"><img src="assets/img/logo%20image%20only.svg" width="80px" height="80px"></div>
+                                                <div class="col d-flex flex-column text-center align-items-center justify-content-center">
+                                                    <h5>4.3 / 5.0</h5><span>Bid: $39,800.00</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4"><button class="btn btn-primary btn-block bg-imdealer fs-small" type="button" data-toggle="modal" data-target="#auction-other-selected">SELECT this dealer</button></div>
+                                        <div class="mb-4">
+                                            <h6 class="text-center">Dealer's comment</h6><textarea class="fs-small w-100" rows="5">Good dealer Good dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealer</textarea></div>
+                                        <div>
+                                            <h6 class="text-center">Reviews</h6>
+                                            <div class="user-mypage-modal-review-scroll fs-small">
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="v-pills-siwoo" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-siwoo-tab">
+                                    <div>
+                                        <div class="m-2 mb-4">
+                                            <h5 class="text-center">Siwoo KING</h5>
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="row">
+                                                <div class="col d-flex justify-content-center align-items-center"><img src="assets/img/logo%20image%20only.svg" width="80px" height="80px"></div>
+                                                <div class="col d-flex flex-column text-center align-items-center justify-content-center">
+                                                    <h5>4.3 / 5.0</h5><span>Bid: $39,800.00</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4"><button class="btn btn-primary btn-block bg-imdealer fs-small" type="button" data-toggle="modal" data-target="#auction-other-selected">SELECT this dealer</button></div>
+                                        <div class="mb-4">
+                                            <h6 class="text-center">Dealer's comment</h6><textarea class="fs-small w-100" rows="5">Good dealer Good dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealerGood dealer</textarea></div>
+                                        <div>
+                                            <h6 class="text-center">Reviews</h6>
+                                            <div class="user-mypage-modal-review-scroll fs-small">
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="d-flex justify-content-between"><span class="fs-larger">Maria</span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></div>
+                                                    <div class="font-italic">
+                                                        <p>He is a good dealer. Nice and professional.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" role="dialog" tabindex="-1" id="auction-selected">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center"><img src="assets/img/logo%20image%20only.svg" width="100px" height="100px"></div>
+                    <div class="text-center">
+                        <p>You have selected Mark.<br>I'MDEALER team will arrange the deal between you and the dealer.&nbsp;<br>Please check your email.<br>Thank you.</p>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" role="dialog" tabindex="-1" id="auction-other-selected">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center"><img src="assets/img/logo%20image%20only.svg" width="100px" height="100px"></div>
+                    <div class="text-center">
+                        <p>You have already selected Mark.<br>You only can select one dealer.<br>Thank you.</p>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
